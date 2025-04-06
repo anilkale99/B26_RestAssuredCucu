@@ -1,5 +1,7 @@
 package get_SD;
 
+import java.util.regex.Matcher;
+
 import org.junit.Assert;
 
 import io.cucumber.java.en.Given;
@@ -15,6 +17,13 @@ public class ValidateGetResponse {
 	@Given("Hit books API")
 	public void hit_books_api() {
 		response = RestAssured.given().get("https://demoqa.com/BookStore/v1/Books");
+		
+		String tempString = "dafjd8akf";
+		String tempString1 = "121212A";
+		
+		//boolean b = Matcher("{4}-/f{2}","2020-06-04T08:48:39.000Z");
+		//Assert.assertTrue("Failed- atr value Not matching", b);
+		
 	}
 	@Then("Validate API returns multiple books json")
 	public void validate_api_returns_multiple_books_json() {
@@ -27,7 +36,7 @@ public class ValidateGetResponse {
 	public void Validate_attribute_at_json_path(String jsonPathStr , String expvalue) {
 	    String actAttibutValue = response.body().jsonPath().getString(jsonPathStr);
 	    System.out.println("actual atr from response = "+actAttibutValue);
-	    Assert.assertTrue("Failed- atr value Not matching", expvalue.equals(actAttibutValue));
+	    Assert.assertTrue("Failed- atr value Not matching", b);
 	}
 	
 }

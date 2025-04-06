@@ -1,4 +1,4 @@
-package get_adv_SD;
+package get_datadriven_SD;
 
 import java.util.Iterator;
 
@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class ValidateGetAdvResponse {
+public class ValidateGetDataDriven {
 	
 	String url = null;
 	Response response = null;
@@ -34,6 +34,8 @@ public class ValidateGetAdvResponse {
 			String jsonPathReplace =  jsonPathStr.replace("XX", ""+i+"");
 			System.out.println("newly built json path = "+jsonPathReplace);
 			String actuTitle = response.body().jsonPath().getString(jsonPathReplace);
+			System.out.println("Actual value= "+actuTitle);
+			System.out.println("Expvalue value= "+expvalue);
 			if(actuTitle.equals(expvalue)) {
 				System.out.println("attribute value present");
 				result = true;
