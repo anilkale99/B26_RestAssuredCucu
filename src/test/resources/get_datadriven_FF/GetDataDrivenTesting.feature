@@ -8,7 +8,7 @@ Examples:
 	|	'books[XX].author'			|	'Glenn Block et al.'													|
 	|	'books[XX].title'				|	'Git Pocket Guide'														|
 	|	'books[XX].subTitle'		|	'A JavaScript and jQuery Developer\'s Guide'	|
-	|	'books[XX].publisher'		|	'O\'Reilly Media'																|
+	|	'books[XX].publisher'		|	'O\'Reilly Media'															|
 
 
   
