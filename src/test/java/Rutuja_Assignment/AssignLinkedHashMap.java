@@ -1,4 +1,4 @@
-package Collection;
+package Rutuja_Assignment;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
