@@ -1,4 +1,4 @@
-package moreAssignments;
+package Rutuja_Assignment;
 
 public class stdAdditionMethod {
 
