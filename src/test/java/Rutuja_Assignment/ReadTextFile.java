@@ -1,4 +1,4 @@
-package Practice;
+package Rutuja_Assignment;
 
 import java.io.BufferedReader;
 import java.io.File;
