@@ -1,4 +1,4 @@
-package String;
+package Rutuja_Assignment;
 
 import java.util.ArrayList;
 public class StringAssign {

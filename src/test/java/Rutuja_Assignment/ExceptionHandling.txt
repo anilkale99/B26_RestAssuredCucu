@@ -1,0 +1,3 @@
+Exception Handling
+- Exception is nothing but an abnormal condition
+- There are classes made/created by Java itself.
