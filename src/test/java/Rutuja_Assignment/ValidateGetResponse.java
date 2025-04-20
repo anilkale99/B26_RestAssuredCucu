@@ -1,4 +1,4 @@
-package get_SD;
+package Rutuja_Assignment;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
