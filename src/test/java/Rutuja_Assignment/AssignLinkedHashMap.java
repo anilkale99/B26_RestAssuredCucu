@@ -17,14 +17,15 @@ public class AssignLinkedHashMap {
 		linkedHashMap.put(4, "Mahesh");
 		linkedHashMap.put(3, "Vinayak");
 		
-	for(Map.Entry<Integer, String> linkHashData : linkedHashMap.entrySet())
-	{
+	for(Map.Entry<Integer, String> linkHashData : linkedHashMap.entrySet()){
 		System.out.println(linkHashData);
 	}
 	System.out.println("=================================");
 	
 	linkedHashMap.remove(2, "Radha");
 	System.out.println(linkedHashMap);
+	
+	
 	
 	}
 
