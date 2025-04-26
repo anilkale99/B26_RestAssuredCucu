@@ -148,7 +148,7 @@ public class March22_Assignment_SD{
         }
 
 
-        @Then("each {string} attribute  value should not be blank or null")
+        @Then("each {string} attribute value should not be blank or null")
         public void each_attribute_value_should_not_be_blank_or_null(String jsonPathStr){
 
 	                boolean allAttributesValid = true;
