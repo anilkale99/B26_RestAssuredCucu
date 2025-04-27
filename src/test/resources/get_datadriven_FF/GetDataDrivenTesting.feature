@@ -11,6 +11,14 @@ Examples:
 	|	'books[XX].publisher'		|	'O\'Reilly Media'															|
 
 
+Scenario: 1.Validate below attributes and its value matching
+  Given Hit books API
+  Then validate below values
+	|	'Name'				|	'Glenn Block et al.'													|
+	|	'title'				|	'Git Pocket Guide'														|
+	|	'publisher'		|	'O\'Reilly Media'															|
+
+
   
   
   

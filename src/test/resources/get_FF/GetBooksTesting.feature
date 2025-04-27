@@ -2,7 +2,7 @@
 Feature: testing for books get api
  
 Scenario: 1.Response should get multiple books data
-  Given Hit books API
+	Given Hit books API
   Then Validate API returns multiple books json
   
 Scenario: 2.Validate single book json should have title value as Git Pocket Guide

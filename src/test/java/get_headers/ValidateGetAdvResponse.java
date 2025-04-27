@@ -1,4 +1,4 @@
-package get_adv_SD;
+package get_headers;
 
 import java.util.Iterator;
 
@@ -7,6 +7,8 @@ import org.junit.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
 public class ValidateGetAdvResponse {
@@ -17,6 +19,18 @@ public class ValidateGetAdvResponse {
 	@Given("Hit books API")
 	public void hit_books_api() {
 		response = RestAssured.given().get("https://demoqa.com/BookStore/v1/Books");
+	}
+	
+	@Then("Validate headers")
+	public void Validate_headers() {
+		String oneHeader = response.getHeader("connection");
+		System.out.println("value - "+oneHeader);
+		Assert.assertTrue(oneHeader.equals("keep-alive"));
+		Headers allHeadears =  response.getHeaders();
+		
+		for (Header singleHeader : allHeadears) {
+			System.out.println("Header name " + singleHeader.getName() + " - " + singleHeader.getValue());
+		}
 	}
 	
 	
