@@ -22,11 +22,12 @@ public class ValidateGetAdvResponse {
 	}
 	
 	@Then("Validate headers")
-	public void Validate_headers() {
+	public void Validate_headers() throws InterruptedException {
 		String oneHeader = response.getHeader("connection");
 		System.out.println("value - "+oneHeader);
 		Assert.assertTrue(oneHeader.equals("keep-alive"));
 		Headers allHeadears =  response.getHeaders();
+		Thread.sleep(10000);
 		
 		for (Header singleHeader : allHeadears) {
 			System.out.println("Header name " + singleHeader.getName() + " - " + singleHeader.getValue());

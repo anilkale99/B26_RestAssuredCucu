@@ -21,12 +21,6 @@ public class ValidateGetAdvResponse {
 	
 	
 	
-	
-	
-	
-	
-	
-	
 	@Then("Validate API returns multiple books json")
 	public void validate_api_returns_multiple_books_json() {
 	    System.out.println("All logs "+ response.then().log().all());
