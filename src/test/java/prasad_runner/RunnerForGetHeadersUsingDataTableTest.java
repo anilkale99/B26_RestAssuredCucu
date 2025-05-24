@@ -15,6 +15,6 @@ import io.cucumber.junit.platform.engine.Constants;
 @ConfigurationParameter(key = Constants.PARALLEL_CONFIG_STRATEGY_PROPERTY_NAME,value = "fixed")
 @ConfigurationParameter(key = Constants.PARALLEL_EXECUTION_ENABLED_PROPERTY_NAME,value = "true")
 
-public class RunnerForGetHeadersUsingDataTable {
+public class RunnerForGetHeadersUsingDataTableTest {
 
 }

@@ -19,6 +19,6 @@ import io.cucumber.junit.platform.engine.Constants;
 @ConfigurationParameter(key = Constants.PARALLEL_EXECUTION_ENABLED_PROPERTY_NAME,value = "true")
 
 
-public class runnerFile_March22_Assignment {
+public class runnerFile_March22_AssignmentTest {
 
 }

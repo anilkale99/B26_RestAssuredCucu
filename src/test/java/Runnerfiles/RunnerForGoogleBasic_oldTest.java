@@ -13,6 +13,6 @@ import io.cucumber.junit.CucumberOptions;
 				"json:target/cucumber-report9.json",
 		}
 		)
-public class RunnerForGoogleBasic_old {
+public class RunnerForGoogleBasic_oldTest {
 
 }
