@@ -18,6 +18,6 @@ import io.cucumber.junit.platform.engine.Constants;
 @ConfigurationParameter(key = Constants.PARALLEL_EXECUTION_ENABLED_PROPERTY_NAME,value = "false")
 
 
-public class RunnerForGetHeaders {
+public class RunnerForGetHeadersTest {
 
 }
